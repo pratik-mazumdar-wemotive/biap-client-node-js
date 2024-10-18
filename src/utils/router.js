@@ -10,6 +10,7 @@ import sseRoutesv2 from "../sse/v2/sseRoutes.js";
 import razorPayv2 from "../module/razorPay/razorpayRoutes.js";
 import wishlistv2 from "../module/order/v2/wishlist/v2/wishlistRoutes.js"
 import accountRoutes from "../module/accounts/accountsRoutes.js";
+import email from "../module/email/emailsRoutes.js";
 const router = new Router();
 
 //v2
@@ -22,6 +23,7 @@ router.use(cartRoutesv2);
 router.use(sseRoutesv2);
 router.use(razorPayv2);
 router.use(wishlistv2);
+router.use(email);
 
 
 export default router;

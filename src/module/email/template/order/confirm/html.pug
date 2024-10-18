@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+    head
+    body
+        .main-container(style='margin:0 auto; max-width:100%;')
+            table(style='border-collapse: collapse; border-spacing: 0; width: 100%; background: white;', cellspacing='0', cellpadding='0', border='0', align='center')
+                tbody
+                    tr
+                        td
+                            img(src=logo, style='width:120px;height:80px;')
+                    tr
+                        td
+                            table(style='font-family: sans-serif; font-size: 14px; color: #2b2c34; line-height: 24px; border-collapse: collapse; width: 100%;', cellspacing='0', cellpadding='0', border='0', align='left')
+                                tbody
+                                    tr
+                                        td(style='width: 20px')
+                                        td(style='border-top: 1px solid #0d4d6e; border-bottom: 1px solid #0d4d6e; padding-top: 30px; padding-bottom: 30px', align='left')
+                                            b Dear Customer:
+                                            |
+                                            br
+                                            br
+                                            b Thank you for your order! Your order #{orderId} from #{bpp.name} has been successfully placed. #{trackingLink}
+                                            br
+                                            br 
+                                            | If you need further assistance, please feel free to reach out to our customer support team.
+                                            br
+                                            br
+                                            | Best regards,
+                                            br
+                                            | Team #{buyerApp}
+                    tr(style='height: 30px')
+
+                    p © 2024 ONDC. All Rights Reserved.
+                    a(href="#") Privacy Policy  
+                    a(href="#", style='margin-left: 10px;') Terms &amp; Conditions
